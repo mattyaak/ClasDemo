@@ -92,14 +92,41 @@ namespace ClasDemo
             Console.WriteLine("Pay = {0}", pay);
 
             Staff staff2 = new Staff("Tom");
-           /*  staff2.HoursWorked = 100; */
+            /*  staff2.HoursWorked = 100; */
             pay = staff2.CalculatePay();
             Console.WriteLine(pay);
 
+        }
             /* int result = 79;
             Console.WriteLine("{0}! You scored {1} marks for your test. " , "Good morning", result); */
 
+            class MyClass
+
+        {
+            //Non static members
+
+            public string message = "Hello, World!";
+            public string Name { get; set; }
+            public void DisplayName()
+            {
+                Console.WriteLine("Name = {0}", Name);
+            }
+
+            //Static members
+
+            public static string greetings = "Good Morning!";
+            public static int Age { get; set; }
+            public static void DisplayAge()
+            {
+                Console.WriteLine("Age = {0}", Age);
+            }
+
+            
+
+        }
+
+        
             
         }
     }
-}
+
