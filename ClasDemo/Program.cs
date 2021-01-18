@@ -76,6 +76,12 @@ namespace ClasDemo
 
         }
 
+        static void PrintFirstElement(int[] a)
+        {
+            Console.WriteLine("The first element is {0}.\n", a[0]);
+
+        }
+
 
 
     }
@@ -92,9 +98,23 @@ namespace ClasDemo
             Console.WriteLine("Pay = {0}", pay);
 
             Staff staff2 = new Staff("Tom");
-            /*  staff2.HoursWorked = 100; */
+            staff2.HoursWorked = 100;
             pay = staff2.CalculatePay();
             Console.WriteLine(pay);
+
+            MyClass classA = new MyClass();
+            Console.WriteLine(classA.message);
+            classA.Name = "Jamie";
+            classA.DisplayName();
+
+            Console.WriteLine(MyClass.greetings);
+            MyClass.Age = 39;
+            MyClass.DisplayAge();
+
+            /* int[] myArray = { 1, 2, 3, 4, 5 };
+            Staff.PrintFirstElement(myArray); */
+
+            
 
         }
             /* int result = 79;
@@ -121,7 +141,6 @@ namespace ClasDemo
                 Console.WriteLine("Age = {0}", Age);
             }
 
-            
 
         }
 
